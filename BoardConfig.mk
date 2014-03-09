@@ -12,14 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#
-# This file sets variables that control the way modules are built
-# thorughout the system. It should not be used to conditionally
-# disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
-# definition file).
-#
-
 # Inherit from common serrano
 -include device/samsung/serrano-common/BoardConfigCommon.mk
 
@@ -31,6 +23,7 @@ TARGET_OTA_ASSERT_DEVICE := serranolte,serranoltexx,i9195,GT-I9195
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_lte_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 # NFC
 BOARD_HAVE_NFC := true

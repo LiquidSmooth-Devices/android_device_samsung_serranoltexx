@@ -1,5 +1,5 @@
 # Inherit some common liquid stuff.
-$(call inherit-product, vendor/liquid/config/commonl_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)

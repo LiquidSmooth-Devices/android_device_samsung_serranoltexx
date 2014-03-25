@@ -13,9 +13,6 @@
 # limitations under the License.
 #
 
-# Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/serranoltexx/serranoltexx-vendor.mk)
-
 # Inherit from serrano-common
 $(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
 $(call inherit-product, device/samsung/serrano-common/nfc.mk)
@@ -29,3 +26,7 @@ otaupdater.otaid=serranoltexx
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.carrier.rc:root/init.carrier.rc

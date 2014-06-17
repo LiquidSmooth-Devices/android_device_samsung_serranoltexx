@@ -25,6 +25,9 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 # NFC
 BOARD_HAVE_NFC := true
 
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1
+
 # BLN
 BOARD_HAVE_GENERIC_BLN := true
 
